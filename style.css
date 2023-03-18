@@ -12,9 +12,10 @@
 }
 
 body {
-	height: 100%;
+	height: 100vh;
 	background-image: linear-gradient(to right, #5eead4, #99f6e4);
 	font-family: sans-serif;
+	overflow-y: hidden;
 }
 
 header {
@@ -24,7 +25,7 @@ header {
 	padding: 0px 15px;
 	height: 70px;
 	border-bottom: 3px solid black;
-	background-color: #3883e29c;
+	background-color: #0d9488;
 }
 
 header h1 {
@@ -46,4 +47,103 @@ header h2 {
 
 .year {
 	color: #fb7185;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	/* align-items: flex-start; */
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 530px;
+	width: 500px;
+	padding: 30px;
+	gap: 50px;
+	background-color: white;
+}
+
+form h2 {
+	cursor: default;
+	color: black;
+}
+
+form h2 span {
+	text-decoration: underline;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.userInput {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inputChild {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.childValues {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.childValues input {
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid black;
+	outline: none;
+	box-shadow: -1px 2px 3px gray;
+}
+
+.childValues label {
+	font-weight: bold;
+	padding: 0px 0px 0px 1px;
+}
+
+.childValues input:focus {
+	border: 1px solid #c3c3c3;
+	text-decoration: none;
+}
+
+.genderContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.genderContainer h3 {
+	cursor: default;
+}
+
+.genderList {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 5px 0px 0px;
+}
+
+.genderList input {
+	cursor: pointer;
+}
+
+#register {
+	padding: 10px 0px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	background-color: #5eead4;
+}
+
+#register:hover {
+	transition: 0.3s ease-in;
+	background-color: #14b8a6;
 }
