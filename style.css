@@ -15,7 +15,6 @@ body {
 	height: 100vh;
 	background-image: linear-gradient(to right, #5eead4, #99f6e4);
 	font-family: sans-serif;
-	overflow-y: hidden;
 }
 
 header {
@@ -39,7 +38,6 @@ header h2 {
 }
 
 .con {
-	/* font-family: 'Times New Roman', Times, serif; */
 	font-family: 'Courier New', Courier, monospace;
 	color: #67e8f9;
 	text-shadow: var(--text-shadow-black);
@@ -52,10 +50,9 @@ header h2 {
 form {
 	display: flex;
 	flex-direction: column;
-	/* align-items: flex-start; */
 	border: 2px solid black;
 	border-radius: 10px;
-	height: 530px;
+	height: 650px;
 	width: 500px;
 	padding: 30px;
 	gap: 50px;
@@ -146,4 +143,72 @@ main {
 #register:hover {
 	transition: 0.3s ease-in;
 	background-color: #14b8a6;
+}
+
+.guestDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.guestChild {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 10px 5px;
+	border-bottom: 1px solid black;
+}
+
+.guestChild label {
+	font-weight: 600;
+}
+
+#guestList {
+	box-shadow: -1px 2px 3px gray;
+	border-radius: 3px;
+	padding: 1px;
+}
+
+@media only screen and (max-width: 1050px) {
+	body {
+		overflow-y: auto;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	form {
+		margin-bottom: 50px;
+	}
+
+	main {
+		align-items: first baseline;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	form {
+		height: auto;
+		width: auto;
+	}
+
+	.genderList {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.guestChild {
+		flex-direction: column;
+	}
+
+	.userInput {
+		flex-direction: column;
+	}
+
+	main {
+		height: auto;
+	}
 }
