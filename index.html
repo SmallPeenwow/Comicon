@@ -15,7 +15,9 @@
     </header>
     
     <main>
-        <form method="POST" action="/users/create">
+        <!-- <form method="POST" action="/src/send/submit-form"> -->
+        <!-- <form method="post" action="/routers/users/create"> -->
+        <form method="post" action="http://localhost:3000/src/index.php" target="_blank">
             <h2><span>Re</span>gistration</h2>
 
             <div class="userInput">
@@ -44,7 +46,7 @@
                     </div>
                     <div class="childValues">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                        <input type="password" name="confirmPassword" placeholder="Confirm your password">
                     </div>
                 </div>
             </div>
