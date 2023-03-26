@@ -7,25 +7,19 @@
     
     <?php
 
-    // phpinfo();
-    //print_r($_POST);
-
     $name = $_POST["name"];
     $surname = $_POST["surname"];
     $email = $_POST["email"];
     $password = $_POST["password"];
     $phoneNumber = $_Post["phoneNumber"];
     $gender = $_POST["genderList"];
-    $guest = filter_input(INPUT_POST, "guest", FILTER_VALIDATE_BOOLEAN);
-
-    //var_dump($name, $surname, $email, $password, $phoneNumber, $gender, $guest);
+    $guest = $_POST["guest"];
 
     $host = 'localhost';
 	$username = 'root';
 	$password = 'password';
 	$dbname = 'comicon';
 
-    // $conn = new mysqli(hostname: $host, username: $username, password: $password, database: $dbname);
     $conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
 
     if (mysqli_connect_errno()){
