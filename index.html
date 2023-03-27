@@ -15,8 +15,7 @@
     </header>
     
     <main>
-        <!-- <form method="POST" action="/src/send/submit-form"> -->
-        <!-- <form method="post" action="/routers/users/create"> -->
+        
         <form method="post" action="http://localhost:3000/src/index.php" target="_blank">
             <h2><span>Re</span>gistration</h2>
 
@@ -24,21 +23,41 @@
                 <div class="inputChild">
                     <div class="childValues">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        
+                        <div class="inputChildRequired">
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            <div class="requiredSign">*</div>
+                        </div>
+
                     </div>
                     <div class="childValues">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Enter your email">
+                        
+                        <div class="inputChildRequired">
+                            <input type="text" id="email" name="email" placeholder="Enter your email">
+                            <div class="requiredSign">*</div>
+                        </div>
+
                     </div>
                     <div class="childValues">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+                        <div class="inputChildRequired">
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                            <div class="requiredSign">*</div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="inputChild">
                     <div class="childValues">
                         <label for="surname">Surname</label>
-                        <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+
+                        <div class="inputChildRequired">
+                            <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+                            <div class="requiredSign">*</div>
+                        </div>
+
                     </div>
                     <div class="childValues">
                         <label for="phoneNumber">Phone Number</label>
